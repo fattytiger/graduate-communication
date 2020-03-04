@@ -1,6 +1,13 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/main/experience/experience",
+    "pages/main/informations/informations",
+    "pages/main/mine/mine",
+    "pages/main/experience_artical/experience_artical",
+    "pages/main/informations_artical/informations_artical",
+    "pages/main/myexperience/myexperience",
+    "pages/main/myinformation/myinformation"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -8,6 +15,21 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position":"top",
+    "list": [{
+      "pagePath": "pages/main/experience/experience",
+      "text": "经验贴"
+    },
+    {
+      "pagePath": "pages/main/informations/informations",
+      "text": "信息交流"
+    },
+    {
+      "pagePath": "pages/main/mine/mine",
+      "text": "我的"
+    }]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

@@ -30,13 +30,73 @@
 		"game": {
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 0,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/main/experience/experience",
+					"pathName": "pages/main/experience/experience",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/main/informations/informations",
+					"pathName": "pages/main/informations/informations",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/main/mine/mine",
+					"pathName": "pages/main/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/main/experience_artical/experience_artical",
+					"pathName": "pages/main/experience_artical/experience_artical",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/main/informations_artical/informations_artical",
+					"pathName": "pages/main/informations_artical/informations_artical",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/main/myexperience/myexperience",
+					"pathName": "pages/main/myexperience/myexperience",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/main/myinformation/myinformation",
+					"pathName": "pages/main/myinformation/myinformation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"scene": null
 				}
 			]
 		}
