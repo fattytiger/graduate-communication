@@ -1,0 +1,51 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+	<view class="page__bd">
+		<view class="page__hd">
+			<!-- <view class="page_circle"><open-data type="userAvatarUrl"></open-data></view>
+			<view class="page__desc"><open-data class="" type="userNickName"></open-data></view> -->
+		</view>
+		<!-- <view class="weui-cells__title">表单</view> -->
+		<view class="weui-cells weui-cells_after-title">
+			<view class="weui-cell ">
+				<view class="weui-cell__hd">
+					<view class="weui-label">昵称</view>
+				</view>
+				<view class="weui-cell__bd">
+					<input class="weui-input" placeholder="请输入昵称" />
+				</view>
+			</view>
+			<view class="weui-cell ">
+				<view class="weui-cell__hd">
+					<view class="weui-label">密码</view>
+				</view>
+				<view class="weui-cell__bd">
+					<input class="weui-input" type="password" placeholder="请输入密码" />
+				</view>
+			</view>
+			<view class="weui-cell" wx:if="{{isLogin}}">
+				<view class="weui-cell__hd">
+					<view class="weui-label">院校</view>
+				</view>
+				<view class="weui-cell__bd">
+					<view class="weui-cell__bd">
+					<input class="weui-input" type="password" placeholder="请输入院校" />
+				</view>
+				</view>
+			</view>
+		</view>
+
+		<label class="weui-agree" for="weuiAgree" wx:if="{{!isLogin}}">
+				<view class="weui-agree__text" >
+					没有账号<navigator url="/pages/index/index" class="weui-agree__link">点击注册</navigator>
+				</view>
+			</label>
+
+		<view class="weui-btn-area" wx:if="{{!isLogin}}">
+			<button class="weui-btn" type="primary">登录</button>
+		</view>
+
+		<view class="weui-btn-area" wx:if="{{isLogin}}">
+			<button class="weui-btn" type="primary" bindtap="intomain">注册</button>
+		</view>
+	</view>
+</view>

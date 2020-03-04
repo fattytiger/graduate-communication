@@ -1,0 +1,4 @@
+.page_circle{
+  border: 1rpx;
+  border-radius: 50%;
+}
