@@ -1,0 +1,50 @@
+<view class="page">
+	<!-- <view class="page__bd">
+		<view class="weui-tabbar">
+			<navigator url="/pages/main/experience/experience" class="weui-tabbar__item weui-bar__item_on">
+				<view style="position: relative;display:inline-block;">
+					<view class="iconfont icon-icon-test7"></view>
+				</view>
+				<view class="weui-tabbar__label">经验贴</view>
+			</navigator>
+			<navigator url="/pages/main/informations/informations" class="weui-tabbar__item ">
+				<view style="position: relative;display:inline-block;">
+					<view class="iconfont icon-icon-test20"></view>
+					<view class="weui-badge weui-badge_dot" style="position:absolute;top:-2px;left:calc(100% - 3px);"></view>
+				</view>
+				<view class="weui-tabbar__label">信息交流</view>
+			</navigator>
+			<navigator url="/pages/main/mine/mine" view class="weui-tabbar__item weui-bar__item_on">
+				<view style="position: relative;display:inline-block;">
+					<view class="iconfont icon-icon-test19"></view>
+				</view>
+				<view class="weui-tabbar__label">我的</view>
+			</navigator>
+		</view>
+	</view> -->
+
+	<view class="page__hd">
+		<view class="page__title">我的主页</view>
+	</view>
+
+	<view class="page__bd">
+		<navigator url="/pages/main/myexperience/myexperience" class="weui-cells weui-cells_after-title">
+			<view class="weui-cell weui-cell_access">
+				<view class="weui-cell__bd">经验贴</view>
+				<view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+					<view style="display: inline-block;vertical-align:middle; font-size: 17px;">详细信息</view>
+					<view class="weui-badge weui-badge_dot" style="margin-left: 5px;margin-right: 5px;"></view>
+				</view>
+			</view>
+		</navigator>
+		<navigator url="/pages/main/myinformation/myinformation" class="weui-cells weui-cells_after-title">
+			<view class="weui-cell weui-cell_access">
+				<view class="weui-cell__bd">交流信息</view>
+				<view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+					<view style="display: inline-block;vertical-align:middle; font-size: 17px;">详细信息</view>
+					<view class="weui-badge weui-badge_dot" style="margin-left: 5px;margin-right: 5px;"></view>
+				</view>
+			</view>
+		</navigator>
+	</view>
+</view>
