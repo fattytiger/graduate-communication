@@ -11,7 +11,7 @@
 					<view class="weui-label">昵称</view>
 				</view>
 				<view class="weui-cell__bd">
-					<input class="weui-input" placeholder="请输入昵称" />
+					<input class="weui-input" maxlength="5" bindblur="inputNickname" value="{{nickname}}" placeholder="请输入昵称" />
 				</view>
 			</view>
 			<view class="weui-cell ">
@@ -19,33 +19,33 @@
 					<view class="weui-label">密码</view>
 				</view>
 				<view class="weui-cell__bd">
-					<input class="weui-input" type="password" placeholder="请输入密码" />
+					<input class="weui-input" value="{{password}}" bindblur="inputPassword" type="password" placeholder="请输入密码" />
 				</view>
 			</view>
-			<view class="weui-cell" wx:if="{{isLogin}}">
+			<view class="weui-cell" wx:if="{{!isLogin}}">
 				<view class="weui-cell__hd">
 					<view class="weui-label">院校</view>
 				</view>
 				<view class="weui-cell__bd">
 					<view class="weui-cell__bd">
-					<input class="weui-input" type="password" placeholder="请输入院校" />
+					<input class="weui-input" maxlength="10" value="{{school}}" bindblur="inputSchool" placeholder="请输入院校" />
 				</view>
 				</view>
 			</view>
 		</view>
 
-		<label class="weui-agree" for="weuiAgree" wx:if="{{!isLogin}}">
+		<label class="weui-agree" for="weuiAgree" wx:if="{{isLogin}}">
 				<view class="weui-agree__text" >
-					没有账号<navigator url="/pages/index/index" class="weui-agree__link">点击注册</navigator>
+					没有账号<view class="weui-agree__link" bindtap="changePageStatus">点击注册</view>
 				</view>
 			</label>
 
-		<view class="weui-btn-area" wx:if="{{!isLogin}}">
-			<button class="weui-btn" type="primary">登录</button>
+		<view class="weui-btn-area" wx:if="{{isLogin}}">
+			<button class="weui-btn" type="primary" bindtap="login">登录</button>
 		</view>
 
-		<view class="weui-btn-area" wx:if="{{isLogin}}">
-			<button class="weui-btn" type="primary" bindtap="intomain">注册</button>
+		<view class="weui-btn-area" wx:if="{{!isLogin}}">
+			<button class="weui-btn" type="primary" bindtap="regist">注册</button>
 		</view>
 	</view>
 </view>
