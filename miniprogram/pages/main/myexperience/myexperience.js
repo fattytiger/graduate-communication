@@ -1,18 +1,28 @@
 // pages/main/myexperience/myexperience.js
+const app = getApp()
+const db = wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    experiences:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    db.collection('experience_collection').where({
+      _openid:app.globalData.openid,
+      author:app.globalData.nickname
+    }).get().then(document => {
+      this.data.experiences = document.data
+      this.setData({
+        experiences:this.data.experiences
+      })
+    })
   },
 
   /**
