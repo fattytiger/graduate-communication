@@ -1,0 +1,202 @@
+卷 Windows 的文件夹 PATH 列表
+卷序列号为 CC7A-4265
+C:.
+│  project.config.json
+│  README.md
+│  tree.txt
+│  
+├─cloudfunctions
+│  ├─callback
+│  │      config.json
+│  │      index.js
+│  │      package.json
+│  │      
+│  ├─echo
+│  │      config.json
+│  │      index.js
+│  │      package.json
+│  │      
+│  ├─init_page
+│  │      config.json
+│  │      index.js
+│  │      package.json
+│  │      
+│  ├─login
+│  │      config.json
+│  │      index.js
+│  │      package.json
+│  │      
+│  └─openapi
+│          config.json
+│          index.js
+│          package.json
+│          
+└─miniprogram
+    │  app.js
+    │  app.json
+    │  app.wxss
+    │  sitemap.json
+    │  
+    ├─pages
+    │  ├─index
+    │  │      index.js
+    │  │      index.json
+    │  │      index.wxml
+    │  │      index.wxss
+    │  │      
+    │  └─main
+    │      ├─experience
+    │      │      experience.js
+    │      │      experience.json
+    │      │      experience.wxml
+    │      │      experience.wxss
+    │      │      
+    │      ├─experience_artical
+    │      │      experience_artical.js
+    │      │      experience_artical.json
+    │      │      experience_artical.wxml
+    │      │      experience_artical.wxss
+    │      │      
+    │      ├─informations
+    │      │      informations.js
+    │      │      informations.json
+    │      │      informations.wxml
+    │      │      informations.wxss
+    │      │      
+    │      ├─informations_artical
+    │      │      informations_artical.js
+    │      │      informations_artical.json
+    │      │      informations_artical.wxml
+    │      │      informations_artical.wxss
+    │      │      
+    │      ├─mine
+    │      │      mine.js
+    │      │      mine.json
+    │      │      mine.wxml
+    │      │      mine.wxss
+    │      │      
+    │      ├─myexperience
+    │      │      myexperience.js
+    │      │      myexperience.json
+    │      │      myexperience.wxml
+    │      │      myexperience.wxss
+    │      │      
+    │      └─myinformation
+    │              myinformation.js
+    │              myinformation.json
+    │              myinformation.wxml
+    │              myinformation.wxss
+    │              
+    ├─style
+    │  │  iconfont.wxss
+    │  │  weui.wxss
+    │  │  
+    │  ├─base
+    │  │  │  fn.wxss
+    │  │  │  reset.wxss
+    │  │  │  
+    │  │  ├─mixin
+    │  │  │      mobile.wxss
+    │  │  │      setArrow.wxss
+    │  │  │      setOnepx.wxss
+    │  │  │      text.wxss
+    │  │  │      
+    │  │  └─variable
+    │  │          color.wxss
+    │  │          global.wxss
+    │  │          weui-button.wxss
+    │  │          weui-cell.wxss
+    │  │          weui-dialog.wxss
+    │  │          weui-grid.wxss
+    │  │          weui-msg.wxss
+    │  │          weui-progress.wxss
+    │  │          weui-tab.wxss
+    │  │          
+    │  └─widget
+    │      ├─weui-agree
+    │      │      weui-agree.wxss
+    │      │      
+    │      ├─weui-animate
+    │      │      weui-animate.wxss
+    │      │      
+    │      ├─weui-button
+    │      │      weui-btn_cell.wxss
+    │      │      weui-btn_default.wxss
+    │      │      weui-btn_disabled.wxss
+    │      │      weui-btn_global.wxss
+    │      │      weui-btn_loading.wxss
+    │      │      weui-btn_plain.wxss
+    │      │      weui-btn_primary.wxss
+    │      │      weui-btn_warn.wxss
+    │      │      weui-button.wxss
+    │      │      
+    │      ├─weui-cell
+    │      │  │  weui-access.wxss
+    │      │  │  weui-cell.wxss
+    │      │  │  weui-cells__group.wxss
+    │      │  │  weui-check.wxss
+    │      │  │  weui-form.wxss
+    │      │  │  weui-gallery.wxss
+    │      │  │  weui-slideview.wxss
+    │      │  │  weui-switch.wxss
+    │      │  │  weui-uploader.wxss
+    │      │  │  
+    │      │  └─weui-form
+    │      │          weui-form-preview.wxss
+    │      │          weui-form_common.wxss
+    │      │          weui-select.wxss
+    │      │          weui-vcode.wxss
+    │      │          
+    │      ├─weui-flex
+    │      │      weui-flex.wxss
+    │      │      
+    │      ├─weui-footer
+    │      │      weui-footer.wxss
+    │      │      
+    │      ├─weui-grid
+    │      │      weui-grid.wxss
+    │      │      
+    │      ├─weui-icon
+    │      │      weui-icon.wxss
+    │      │      
+    │      ├─weui-loading
+    │      │      weui-dot-loading.wxss
+    │      │      weui-loading.wxss
+    │      │      
+    │      ├─weui-media-box
+    │      │      weui-media-box.wxss
+    │      │      
+    │      ├─weui-navigation-bar
+    │      │      weui-navigation-bar.wxss
+    │      │      
+    │      ├─weui-page
+    │      │      weui-article.wxss
+    │      │      weui-form.wxss
+    │      │      weui-msg.wxss
+    │      │      
+    │      ├─weui-panel
+    │      │      weui-panel.wxss
+    │      │      
+    │      ├─weui-progress
+    │      │      weui-progress.wxss
+    │      │      
+    │      ├─weui-searchbar
+    │      │      weui-searchbar.wxss
+    │      │      
+    │      ├─weui-tab
+    │      │      weui-navbar.wxss
+    │      │      weui-tab.wxss
+    │      │      weui-tabbar.wxss
+    │      │      
+    │      └─weui-tips
+    │              weui-actionsheet.wxss
+    │              weui-badge.wxss
+    │              weui-dialog.wxss
+    │              weui-half-screen-dialog.wxss
+    │              weui-loadmore.wxss
+    │              weui-mask.wxss
+    │              weui-toptips.wxss
+    │              
+    └─utils
+            md5.js
+            
