@@ -2,25 +2,12 @@ const md5 = require('../../utils/md5')
 const db = wx.cloud.database()
 const app = getApp()
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     isLogin: true,
     nickname: '',
     password: '',
     school: ''
   },
-
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
   changePageStatus:function(){
     //set nickname and password as empty
     this.data.nickname = ''
@@ -31,7 +18,6 @@ Page({
       isLogin:false
     })
   },
-
   inputNickname: function (e) {
     //set nickname 
     this.data.nickname = e.detail.value
@@ -39,6 +25,7 @@ Page({
   inputPassword: function (e) {
     //set password
     if (e.detail.value === '') {
+      this.data.password = ''
       return
     }
     this.data.password = md5.hexMD5(e.detail.value)
@@ -47,7 +34,6 @@ Page({
     //set school
     this.data.school = e.detail.value
   },
-
   regist: function () {
     //judge the nickname value
     if (this.data.nickname === '') {
@@ -89,6 +75,7 @@ Page({
       })
       return
     }
+    console.log(this.data.password)
     //judge the password value
     if (this.data.password === '') {
       wx.showToast({
@@ -158,7 +145,6 @@ Page({
       if(document.data.length !== 0){
         wx.hideLoading({
           success:() => {
-            console.log(document.data)
             wx.switchTab({
               url: '/pages/main/experience/experience'
             })
