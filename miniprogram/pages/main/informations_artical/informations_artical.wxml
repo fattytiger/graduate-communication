@@ -1,49 +1,40 @@
 <view class="page">
 
 	<view class="weui-article">
-		<view class="weui-article__h1">大标题</view>
+		<view class="weui-article__h1">{{title}}</view>
 		<view class="weui-article__section">
-			<view class="weui-article__h2">作者</view>
+			<view class="weui-article__h2">{{author}}</view>
 			<view class="weui-article__section">
 				<view class="weui-article__p">
-					问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述
-					问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述
-					问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述
+					{{desc}}
 				</view>
 			</view>
 		</view>
 	</view>
-	<view class="weui-cells__title">带评论家</view>
-	<view class="page_bd">
-		<view class="weui-cells weui-cells_after-title">
-			<view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-				<view class="weui-cell__bd">cell standard cell standard cell standard cell standard cell standard cell standard</view>
-			</view>
-		</view>
-	</view>
-	<view>
-		<view class="weui-cells__title">带评论家</view>
+	
+	<block wx:key="index" wx:for="{{comments}}">
+		<view class="weui-cells__title">{{comments[index].author}}</view>
 		<view class="page_bd">
 			<view class="weui-cells weui-cells_after-title">
 				<view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-					<view class="weui-cell__bd">cell standard cell standard cell standard cell standard cell standard cell standard</view>
+					<view class="weui-cell__bd">{{comments[index].comment}}</view>
 				</view>
 			</view>
 		</view>
-	</view>
+	</block>
 
 	<view class="weui-cells__title"></view>
 	<view class="weui-cells weui-cells_after-title">
 		<view class="weui-cell">
 			<view class="weui-cell__bd">
-				<textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em" />
-				<view class="weui-textarea-counter">0/200</view>
+				<textarea class="weui-textarea" maxlength="100" bindinput="inputComment" placeholder="请输入文本" style="height: 3.3em" />
+				<view class="weui-textarea-counter">{{flagNum}}/200</view>
                 </view>
             </view>
         </view>
         <view class="weui-cells__title"></view>
         <view class="page__bd page__bd_spacing">
-          <button class="weui-btn" type="primary">添加评论</button>
+          <button class="weui-btn" bindtap="addComment" type="primary">添加评论</button>
         </view>
 
 
