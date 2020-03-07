@@ -1,18 +1,39 @@
 // pages/main/experience_artical/experience_artical.js
+const db = wx.cloud.database()
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    title:'',
+    desc:'',
+    author:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //get artical id
+    let articalID = options.artical_id
+    db.collection('experience_collection').where({
+      _id:articalID
+    }).get().then(result => {
+      console.log(result)
+      //get data by object ID
+      let finddata = result.data[0]
+      //render the page by the received data
+      this.data.title = finddata.title
+      this.data.desc  = finddata.desc
+      this.data.author = finddata.author
+      this.setData({
+        title:this.data.title,
+        desc:this.data.desc,
+        author:this.data.author
+      })
+    })
   },
 
   /**
